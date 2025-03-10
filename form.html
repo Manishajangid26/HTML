@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background-image: url(./f3.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        } */
+        .a{
+            font-size: 20px;
+            position: relative;
+            /* left: 200px; */
+        }
+        .b{
+            position: relative;
+            left: 100px;
+        }
+        .c{
+            position: relative;
+            left: 100px;
+        }
+        .d{
+            position: relative;
+            left: 100px;
+        }
+        .e{
+            position: relative;
+            left: 100px;
+        }
+        .f{
+            position: relative;
+            left: 100px;
+        }
+        .in{
+            position: relative;
+            left: 100px;
+            width: 300px;
+            height: 30px;
+        }
+        .btn{
+            position: relative;
+            top: 450px;
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function data()
+            {
+        var a=document.getElementById("fn").value;
+        var b=document.getElementById("fn1").value;
+        var c=document.getElementById("fn2").value;
+        var d=document.getElementById("mob").value;
+        if (a==""||b==""||c==""||d=="")
+        {  
+            alert("all fields are mendatory ");
+        }
+
+            }
+
+    </script>
+    <center>
+    <form onsubmit="data()">
+        <fieldset style="width: 750px;">
+        <h1>SHUGUN COLLEGE</h1>
+        <br>
+        <h2>STUDENT REGISTRATION FORM</h2>
+        <table>
+            <tr>
+                <td class="a">
+                    Student name :
+                    
+                    <td>
+                        
+                        <input class="in" type="text" placeholder="Full Name" id="fn">
+                    </td>
+                </td>
+            
+            </tr>
+           
+            <tr>
+                <td class="a">
+                    Father's Name :
+                    <td>
+                        <input class="in" type="text" placeholder="Father's Full Name" id="fn1">
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td class="a">
+                    Mother's Name
+                    <td>
+                        <input class="in" type="text" placeholder="Mother's Full Name" id="fn2">
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td class="a">
+                    Select Gender:
+                    <td class="b">
+                        <input  type="radio" name="gender"> Mail
+                        <input  type="radio" name="gender">Femail
+                        <input  type="radio" name="gender">Other
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td class="a">
+                    Date of Birth :
+                    <td>
+                        <input class="in" type="date">
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td class="a">
+                    E=mail : 
+                    <td>
+                        <input class="in" type="text">
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td class="a">
+                    Select Course:
+                </td>
+                <td class="c">
+                    <select name="Course" id="">
+                        <option value="">---select---</option>
+
+                        <option value="">HTML</option>
+                        <option value="">PHP</option>
+                        <option value="">JAWA</option>
+                        <option value="">PYTHON</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="a">
+                    Hobbies:
+                </td>
+                <td class="d">
+                    <input type="checkbox" name="reading Books">Reading Books
+                    <input type="checkbox" name="Playing football">Playing football
+                    <input type="checkbox" name="singing">Singing
+                    <input type="checkbox" name="dancing">Dancing
+                </td>
+            </tr>
+            <tr>
+                <td class="a">
+                    Address :
+                </td>
+                <td class="e">
+                    <textarea name="address" id=""></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="a">
+                    Photo :
+                </td>
+                <td class="f">
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td class="a">
+                    Mobile Number :
+                </td>
+                <td>
+                    <input class="in" type="text" id="mob">
+                </td>
+            </tr>
+           
+            <button class="btn"><a href="#">SUBMIT</a></button>
+        
+
+        </table>
+        </fieldset>
+    </form>
+</center>
+</body>
+</html>
