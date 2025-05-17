@@ -5,20 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-image: url(./pank.jpeg);
+            background-size: 100%;
+            background-position: center;
+            background-position-y: 20%;
+        }
+
+        .box {
+            position: relative;
+            top: 70px;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255s));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0px 0px 32px 0px rgba(255, 255, 255, 0.37);
+        }
+
+        label {
+            color: aliceblue;
+        }
+
+        input {
+            padding: 4px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            border-radius: 5px;
+            border-bottom: 2px solid white;
+            width: 300px;
+            color: white;
+
+        }
+
+        input::placeholder {
+            color: aliceblue;
+            font-size: 17px;
+        }
+
+        .btn {
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+            color: aliceblue;
+            border: none;
+        }
+
+        .btn:hover {
+            color: white;
+            background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255));
+
+            border: 2px solid white;
+        }
+
+        .logo {
+            color: aliceblue;
+            position: relative;
+            top: 50px;
+        }
+    </style>
 </head>
 
 <body>
-    <center>
-        <img src="./workplace.jpg" width="600" height="400" usemap="#workplace" alt="">
-        <map name="workplace">
-            <area shape="rect" coords="200,208,396,369" href="./laptopImagenew.jpg" alt="">
-            <area shape="circle" coords="453,328,30" href="./coffee.jpg" alt="">
-            <area shape="poly" coords="428,370,463,353,499,362,468,380"
-                href="./cartoon-character-generated-by-Fotor-ai-art-creator.webp" alt="">
+    <div class="box">
+        <center>
+            <h1 class="logo">Login</h1>
+            <form action="">
+                <br>
+                <br>
+                <br>
+                <br>
 
+                <!-- <label for="">Name</label> -->
+                <br>
+                <input type="text" name="" id="" placeholder="Name"> <br><br>
+                <!-- <label for="">Email</label> -->
+                <br>
+                <input type="text" name="" id="" placeholder="Email"> <br><br>
+                <br>
+                <!-- <label for="">Mobile</label> -->
+                <input type="text" name="" id="" placeholder="Mobile"> <br><br>
+                <br>
 
-        </map>
-    </center>
+                <button class="btn">submit Info</button>
+            </form>
+        </center>
+    </div>
+
 </body>
 
 </html>
